@@ -22,7 +22,7 @@ Here's a list of the projects included in this repository:
 
 | Project            | Description                                                                                                                                                                   |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🗺️ **Web Mapping** | An interactive web application that generates maps with custom markers and layers.                                                                                            |
+| 🗺️ **Web Mapping** | An interactive web application that displays a map with information about various volcanoes around the world, including their locations and key details.                      |
 | 📹 **WebCamp**     | A motion detection system that uses the camera feed to detect movements, logs events to a CSV file, and generates graphs showing the start and end times of detected motions. |
 
 ## Getting Started
