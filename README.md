@@ -20,8 +20,10 @@ This repository contains multiple Python projects, each residing in its own dire
 
 Here's a list of the projects included in this repository:
 
-- #1 Web Mapping
-- #2 WebCamp
+| Project            | Description                                                                                                                                                                   |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🗺️ **Web Mapping** | An interactive web application that generates maps with custom markers and layers.                                                                                            |
+| 📹 **WebCamp**     | A motion detection system that uses the camera feed to detect movements, logs events to a CSV file, and generates graphs showing the start and end times of detected motions. |
 
 ## Getting Started
 
