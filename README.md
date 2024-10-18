@@ -19,7 +19,9 @@ This repository contains multiple Python projects, each residing in its own dire
 ## Projects
 
 Here's a list of the projects included in this repository:
-- #1 Web Mapping 
+
+- #1 Web Mapping
+- #2 WebCamp
 
 ## Getting Started
 
@@ -59,4 +61,3 @@ Contributions are welcome! If you'd like to add a project or improve an existing
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
