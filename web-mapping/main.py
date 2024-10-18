@@ -14,7 +14,7 @@ volcanoes = pandas.read_csv("data/Volcanoes.txt")
 # Convert Column to a list
 lat = list(volcanoes["LAT"])
 lon = list(volcanoes["LON"])
-
+name = list(volcanoes['NAME'])
 elev = list(volcanoes["ELEV"])
 
 
@@ -25,7 +25,7 @@ my_map = folium.Map(
 )
 
 # Popup HTML
-html = """<p style='font-weight: 300; font-style: italic;'>Volcano information:</p>
+html = """<p style='font-weight: 300; font-style: italic;'>%s information:</p>
 <ul>
   <li style='color: green'>Height: %s m</li>
 </ul>
@@ -43,20 +43,27 @@ def color_producer(elevation: float) -> str:
 
 
 # Add Marker
-fg = folium.FeatureGroup(name="My Map")
+fgv = folium.FeatureGroup(name="Volcanoes")
 # Loops Marker with Data
-for lt, ln, el in zip(lat, lon, elev):
+for lt, ln, el, nm in zip(lat, lon, elev, name):
     # IFRAME
-    iframe = folium.IFrame(html=html % str(el), width=200, height=100)
-    fg.add_child(
-        folium.Marker(
-            location=[lt, ln],
-            popup=folium.Popup(iframe),
-            icon=folium.Icon(color=color_producer(el)),
-        )
+    iframe = folium.IFrame(html=html % (nm, str(el)), width=200, height=100)
+    fgv.add_child(
+        folium.CircleMarker(location=[lt, ln], radius=6, popup=folium.Popup(iframe),
+                            fill_color=color_producer(el), color= "black", fill_opacity=0.7)
     )
 
+fgp = folium.FeatureGroup(name="Population")
 
-my_map.add_child(fg)
+
+fgp.add_child(folium.GeoJson(data=(open('data/world.json', 'r', encoding='utf-8-sig').read()),
+                            style_function=lambda x: {'fillColor': 'green' if x['properties']['POP2005'] < 10000000 
+                                                      else 'orange' if 10000000 <= x['properties']['POP2005'] < 20000000 else 'red' }))
+
+
+my_map.add_child(fgv)
+my_map.add_child(fgp)
+my_map.add_child(folium.LayerControl())
+
 
 my_map.save("test.html")
