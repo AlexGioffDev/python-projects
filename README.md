@@ -21,6 +21,7 @@ This repository contains multiple Python projects, each residing in its own dire
 Here's a list of the projects included in this repository:
 
 (Add more projects as needed)
+- #1 Web Mapping 
 
 ## Getting Started
 
