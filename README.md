@@ -20,11 +20,12 @@ This repository contains multiple Python projects, each residing in its own dire
 
 Here's a list of the projects included in this repository:
 
-| Project             | Description                                                                                                                                                                   |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🗺️ **Web Mapping**  | An interactive web application that displays a map with information about various volcanoes around the world, including their locations and key details.                      |
-| 📹 **WebCamp**      | A motion detection system that uses the camera feed to detect movements, logs events to a CSV file, and generates graphs showing the start and end times of detected motions. |
-| 📊 **Analysis App** | A data visualization application that uses JustPy to graphically represent data obtained from a CSV file, allowing users to interactively explore and analyze the dataset.    |
+| Project                  | Description                                                                                                                                                                    |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 🗺️ **Web Mapping**       | An interactive web application that displays a map with information about various volcanoes around the world, including their locations and key details.                       |
+| 📹 **WebCamp**           | A motion detection system that uses the camera feed to detect movements, logs events to a CSV file, and generates graphs showing the start and end times of detected motions.  |
+| 📊 **Analysis App**      | A data visualization application that uses JustPy to graphically represent data obtained from a CSV file, allowing users to interactively explore and analyze the dataset.     |
+| 🌐 **Simple Flask Page** | A basic Flask web page showcasing essential features like routes, templates, layouts, and serving static files. This project is a hands-on introduction to Flask fundamentals. |
 
 ## Getting Started
 
