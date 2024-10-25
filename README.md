@@ -20,10 +20,11 @@ This repository contains multiple Python projects, each residing in its own dire
 
 Here's a list of the projects included in this repository:
 
-| Project            | Description                                                                                                                                                                   |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🗺️ **Web Mapping** | An interactive web application that displays a map with information about various volcanoes around the world, including their locations and key details.                      |
-| 📹 **WebCamp**     | A motion detection system that uses the camera feed to detect movements, logs events to a CSV file, and generates graphs showing the start and end times of detected motions. |
+| Project             | Description                                                                                                                                                                   |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🗺️ **Web Mapping**  | An interactive web application that displays a map with information about various volcanoes around the world, including their locations and key details.                      |
+| 📹 **WebCamp**      | A motion detection system that uses the camera feed to detect movements, logs events to a CSV file, and generates graphs showing the start and end times of detected motions. |
+| 📊 **Analysis App** | A data visualization application that uses JustPy to graphically represent data obtained from a CSV file, allowing users to interactively explore and analyze the dataset.    |
 
 ## Getting Started
 
