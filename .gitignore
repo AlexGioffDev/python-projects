@@ -1,11 +1,89 @@
+# Escludi cartelle specifiche dei progetti che non devono andare su GitHub
 first_example/
 second_example/
 third_example/
 fourth_example/
 fifth_example/
-Webmap_datasources/
 read_file/
-Webmap_datasources.zip
-.vscode
-.venv
+Webmap_datasources/
+databases-app/
+gui-base/
+
+# Python generico
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Cartelle e file di configurazione di ambienti virtuali
+.venv/
+venv/
+env/
+ENV/
+.venv.bak/
+env.bak/
+env.bak/
+
+# File di configurazione di IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# File di sistema
 .DS_STORE
+Thumbs.db
+
+# File di log e cache
+*.log
+*.cache
+*.bak
+*.swp
+*.tmp
+*.temp
+*.pid
+
+# File di configurazione locali
+*.env
+.env.*
+*.ini
+*.cfg
+config.py
+secret.py
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Tkinter (file di output e configurazioni temporanee)
+*.tcl
+*.tk
+
+# Applicazioni Web (Django, Flask)
+*.sqlite3
+*.db
+instance/
+webapp/staticfiles/
+webapp/media/
+
+# Node.js (per progetti web con frontend)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Cartelle compresse
+*.zip
+*.tar.gz
+*.rar
+
+# Risorse sensibili o dati specifici
+/secrets/
+/keys/
+/Webmap_datasources.zip
+
+# Database locali
+*.db
+*.sqlite
